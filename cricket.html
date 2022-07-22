@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cricket-animation</title>
+
+    <style>
+        .field:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            transition: 0.3s ease-in;
+        }
+
+        .field {
+            border: 1px solid yellow;
+            margin: 7%;
+        }
+
+        .bat {
+            margin-left: 15%;
+            position: relative;
+            top: 55px;
+            transform-origin: top right;
+
+
+        }
+
+        .field:hover .ball {
+            transform: translate(1250px, -350px);
+
+        }
+
+        .ball {
+            border: 10px solid rgb(21, 243, 14);
+            width: 45px;
+            height: 45px;
+            border-radius: 35px;
+            background-color: red;
+            margin-left: 25%;
+            transition: transform 1s ease-out .1s;
+        }
+
+        header {
+            margin-top: 5%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: purple;
+            font-family: 'Times New Roman';
+            background-color: rgb(213, 206, 245);
+            border: .5px solid purple;
+            font-weight: 700;
+        }
+        p{
+            text-align: center;
+            font-size: 2em;
+            color:purple;
+            font-family: 'Times New Roman';
+            background-color: rgb(235, 205, 241);
+            border: .5px solid purple; 
+        }
+       
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Who Loves Programming.</h1>
+        <p>Who loves Cricket, he must to practie, practice and practice. At the same way, as a Web-developer, we must to practice more and more.</p>
+    </header>
+
+    <section class="cricket-ball">
+        <div class="field">
+            <img class="bat" src="images/project-bat.png" alt="">
+            <div class="ball"></div>
+        </div>
+    </section>
+
+</body>
+
+</html>
